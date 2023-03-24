@@ -1,0 +1,20 @@
+.grandchild {
+  padding: 4px;
+  background-color: azure;
+}
+
+.child {
+  padding: 8px;
+  background-color: rgb(167, 255, 255);
+}
+
+.parent {
+  padding: 8px;
+  background-color: rgb(0, 255, 255);
+  margin: auto
+  max-width: 960;
+}
+
+.friend {
+  background-color: rgb(244, 255, 198);
+}
