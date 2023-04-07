@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.topnav {
+  padding: 8px 24px;
+  font-family: "Noto Sans KR", sans-serif;
+  min-height: 10px;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: ;
+  color: white;
+}
+
+.topnav__buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.navBar__button > a {
+  color: white;
+  text-decoration: none;
+}
