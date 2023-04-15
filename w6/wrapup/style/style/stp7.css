@@ -15,7 +15,7 @@ body {
 .contaner {
   --anyName: 4px;
   margin-inline: auto;
-  padding-inline: anyname;
+  padding-inline: 64px;
   max-width: 1200px + 2 * anyName;
   background-color: darksalmon;
 }
@@ -28,13 +28,13 @@ body {
   background-color: blue;
   color: white;
   font-weight: 700;
-  .wrapper {
+  .nav .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-block: 12px;
   }
-  &__menuwrapper {
+  .nav__menuwrapper {
     display: flex;
     gap: 24px;
     align-items: baseline;
@@ -71,13 +71,14 @@ body {
       overflow: hidden;
       img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
       }
     }
   }
 }
 
-.nav .nav__menuwrapper {
+.nav__menuwrapper {
   display: flex;
   gap: 24px;
   align-items: baseline;
@@ -128,14 +129,8 @@ body {
 
 #main2 {
   background-color: lightpink;
-  .wrapper {
-    display: flex;
-    align-items: center;
-    $gap-val: 24px;
-    gap: 24px;
-    & > * {
-      flex: 1;
-    }
+  .wrapper > * {
+    flex: 1;
   }
   .main {
     &__text {
