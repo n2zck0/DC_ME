@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.section {
+  background-color: bisque;
+}
+
+.contaner {
+  --anyName: 4px;
+  margin-inline: auto;
+  padding-inline: $anyName;
+  max-width: 1200px + 2 * $anyName;
+  background-color: darksalmon;
+}
+
+.wrapper {
+  padding-block: 64px;
+}
+
+.nav {
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 12px;
+  }
+  &__menuwrapper {
+    display: flex;
+    gap: 24px;
+    align-items: baseline;
+  }
+}
+
+#main1 {
+  text-align: center;
+  .button {
+    font-size: 17px;
+    background-color: palevioletred;
+    color: white;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    font-weight: 700px;
+    text-align: center;
+    width: fit-content;
+    border-radius: 8px;
+    &--type-text {
+      background-color: unset;
+      color: palevioletred;
+      padding-inline: 0;
+    }
+  }
+  .main {
+    &__text {
+      margin-inline: auto;
+      max-width: 600px;
+      margin-bottom: 24px;
+    }
+    &__media {
+      aspect-ratio: 16 / 9;
+      background-color: bisque;
+    }
+  }
+}
+
+.nav .nav__menuwrapper {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+
+.nav .wrapper {
+  padding-block: 12px;
+}
+
+.nav__menu,
+.nav__logo {
+}
+
+.flex {
+  margin-inline: auto;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex--dir-column {
+  flex-direction: column;
+}
+
+.flex h2 {
+  margin-bottom: 16px;
+}
+
+.flex p {
+  margin-bottom: 24px;
+}
+
+.video {
+  background-color: aquamarine;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.flex.button {
+  margin-bottom: 36px;
+}
+
+#main1 .wrapper {
+  display: flex;
+}
+
+#main2 {
+  background-color: lightpink;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    $gap-val: 24px;
+    gap: 24px;
+    & > * {
+      flex: 1;
+    }
+  }
+  .main {
+    &__text {
+      &__buttomwrapper {
+        display: flex;
+        gap: 16px;
+      }
+    }
+    &__media {
+      aspect-ratio: 4 / 3;
+      background-color: bisque;
+    }
+  }
+  .flex h2 {
+    margin-bottom: 16px;
+  }
+
+  .flex p {
+    max-width: 10ch;
+    margin-bottom: 24px;
+  }
+}
