@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .topnav {
@@ -14,18 +15,15 @@ body {
 
 .topnav__logo {
   height: 36px;
+  display: grid;
 }
 
 .topnav__buttons {
   display: flex;
   gap: 16px;
 }
+
 .topnav__button {
   color: white;
-  justify-content: end;
-  align-items: center;
-  min-height: 10px;
-  padding: 8px 16px;
-  display: flex;
-  gap: 16px;
+  text-transform: capitalize;
 }

@@ -1,11 +1,11 @@
 {
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
   "settingsSync.ignoredSettings": [
     "editor.fontSize",
     "workbench.colorTheme",
     "window.zoomLevel"
   ],
-//폰트 사이즈는 원하는 크기로 수정할 것.
+  //폰트 사이즈는 원하는 크기로 수정할 것.
   "editor.fontSize": 15,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -15,7 +15,7 @@
   "editor.stickyScroll.enabled": true,
   "workbench.colorTheme": "Default Dark+",
   "workbench.startupEditor": "none",
-//포매팅시 줄바꿈할 가로 길이.
+  //포매팅시 줄바꿈할 가로 길이.
   "prettier.printWidth": 50,
   "liveSassCompile.settings.generateMap": false,
   "liveSassCompile.settings.formats": [

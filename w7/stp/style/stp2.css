@@ -1,17 +1,21 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .topnav {
-  padding: 8px 24px;
-  font-family: "Noto Sans KR", sans-serif;
-  min-height: 10px;
   background-color: grey;
+  min-height: 10px;
+  padding: 8px 16px;
   display: flex;
   justify-content: space-between;
-  align-items: ;
-  color: white;
+  align-items: center;
+}
+
+.topnav__logo {
+  height: 36px;
+  display: grid;
 }
 
 .topnav__buttons {
@@ -19,7 +23,7 @@ body {
   gap: 16px;
 }
 
-.navBar__button > a {
+.topnav__button {
   color: white;
-  text-decoration: none;
+  text-transform: capitalize;
 }
