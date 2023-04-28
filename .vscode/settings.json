@@ -3,7 +3,7 @@
   "settingsSync.ignoredSettings": [
     "editor.fontSize",
     "workbench.colorTheme",
-    "window.zoomLevel"
+    "chrome.zoomLevel"
   ],
   //폰트 사이즈는 원하는 크기로 수정할 것.
   "editor.fontSize": 15,
@@ -15,6 +15,7 @@
   "editor.stickyScroll.enabled": true,
   "workbench.colorTheme": "Default Dark+",
   "workbench.startupEditor": "none",
+  "open-in-browser.default": "'chrome'",
   "prettier.printWidth": 50,
   "liveSassCompile.settings.generateMap": false,
   "liveSassCompile.settings.formats": [
