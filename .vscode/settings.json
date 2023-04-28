@@ -15,7 +15,6 @@
   "editor.stickyScroll.enabled": true,
   "workbench.colorTheme": "Default Dark+",
   "workbench.startupEditor": "none",
-  //포매팅시 줄바꿈할 가로 길이.
   "prettier.printWidth": 50,
   "liveSassCompile.settings.generateMap": false,
   "liveSassCompile.settings.formats": [
