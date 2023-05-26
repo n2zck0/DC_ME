@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../../../.vscode"
+	},
+	{
+		"path": "../../../w8"
+	},
+	{
+		"path": "../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "w7"
+  }
+}

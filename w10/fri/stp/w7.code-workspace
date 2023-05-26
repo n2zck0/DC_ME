@@ -1,0 +1,19 @@
+{
+  "folders": [
+	{
+		"name": "w7",
+		"path": "../../../w7"
+	},
+	{
+		"name": "w8",
+		"path": "../../../w8"
+	},
+	{
+		"name": "w10",
+		"path": "../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "w10"
+  }
+}

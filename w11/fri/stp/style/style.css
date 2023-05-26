@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  aspect-ratio: 1/1;
+  width: 200px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  margin-bottom: 1rem;
+  transition: all 250ms ease-in-out;
+}
+
+.box:hover {
+  background-color: blue;
+}
+
+.box.boxSelected {
+  background-color: rgb(255, 130, 149);
+}

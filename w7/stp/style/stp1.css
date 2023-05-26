@@ -9,20 +9,34 @@
   color: rgb(255, 255, 255);
   font-size: larger;
   font-weight: 700;
-  margin: auto;
+  content-visibility: inline-size;
+  animation-name: topnav;
 }
 
-.container {
-  max-width: 1200px;
-  margin-inline: auto;
+.wrapper {
   display: flex;
+  gap: 24px;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-block: 12px;
 }
 
+.lt680px {
+  display: none;
+}
+
+@container .nav (width: < 42.5rem) {
+  &__menuwrapper {
+    display: none;
+  }
+  .lt680px {
+    display: unset;
+  }
+}
 .topnav__logo {
-  height: 70px;
+  height: 50px;
   justify-content: baseline;
 }
-
 .topnav .container {
   max-width: 1328px;
   margin-inline: auto;
@@ -30,40 +44,15 @@
   justify-content: space-between;
   padding: 10px;
 }
-
-.topnav__menuwrapper {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-}
-
-.buttonwrapper {
-  gap: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: baseline;
-}
-
-.sectionnav {
-  gap: 24px;
-  color: #000;
-  max-width: 1328px;
-  margin-inline: auto;
-  display: grid;
-  justify-content: space-between;
-  padding: 0px;
-}
-
-.wrapper {
+.menuwrapper {
   gap: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.topnav__menubutton1 {
+.topnav__menubutton {
   width: -moz-fit-content;
-  width: fit-content;
   background-color: rgb(255, 255, 255);
   padding-left: 10px;
   padding-right: 400px;
@@ -71,9 +60,10 @@
   color: rgb(255, 23, 104);
   font-weight: 700;
   text-align: center;
+  display: flex;
 }
 
-.topnav__menubutton2 {
+.topnav__menubutton1 {
   width: -moz-fit-content;
   width: fit-content;
   background-color: rgb(125, 34, 49);
@@ -84,6 +74,21 @@
   text-align: center;
 }
 
+.topnav__menubutton2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  padding-block: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.buttonwrapper {
+  gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
 #hero {
   gap: 24px;
   display: flex;
@@ -93,19 +98,37 @@
   max-width: 1328px;
   justify-content: space-between;
   padding: 0px;
+  .wrapper {
+    gap: 50px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    .main__text {
+      width: auto;
+      height: auto;
+    }
+  }
+  .sectionnav {
+    gap: 24px;
+    color: #000;
+    max-width: 1328px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+  }
 }
 
-#hero .container {
-  gap: 24px;
-  justify-content: space-between;
-  align-items: center;
+#hero1 {
+  .container {
+    display: flex;
+  }
+  .wrapper. > * {
+    flex: 1;
+  }
 }
 
-#hero1 .wrapper > * {
-  flex: 1;
-}
-
-#hero .nav__menuWrapper1 {
+.nav__menuWrapper {
   display: flex;
   gap: 50px;
 }
@@ -117,23 +140,6 @@
 
 #hero2 .wrapper > * {
   flex: 1;
-}
-
-#hero .wrapper {
-  gap: 50px;
-  margin: 10px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#hero1 .wrapper .main__text {
-  width: auto;
-  height: auto;
-}
-
-.buttonwrapper2 {
-  display: flex;
-  align-items: center;
 }
 
 .ctbutton {
@@ -195,21 +201,20 @@
 
 #hero1 {
   background-color: rgb(239, 239, 239);
+  .buttonwrapper2 .button {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+  }
 }
-
-#hero1 .container {
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(239, 239, 239);
-}
-
-#hero1 .wrapper {
+.wrapper {
   display: flex;
   width: 100%;
   height: 100%;
   align-items: center;
   gap: 24px;
 }
+
 #hero1 .main__text {
   font-weight: light;
   display: flex;
@@ -225,12 +230,6 @@
 
 #hero .nav__menu {
   gap: 24px;
-}
-
-#hero1 .button {
-  display: flex;
-  align-items: center;
-  border-radius: 100px;
 }
 
 #hero1 .buttonwrapper2 {
@@ -338,7 +337,8 @@
 .footer {
   background-color: rgb(239, 239, 239);
   font-size: 0.875rem;
-  display: flex;
+  display: grid;
+  align-items: center;
 }
 
 .footer li {
